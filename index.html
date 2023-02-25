@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <title>Quest Javascript intermediário | Formulário</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="information">
+            <h1 class="title">FICOU COM DÚVIDA?<br> NOS MANDE UMA MENSAGEM!</h1>
+            <p class="text">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato
+                em menos de 24h.</p>
+        </div>
+
+        <form id="form" method="GET" action="index.html">
+            <div class="input-container">
+                <input type="text" name="nome" class="required" placeholder="Nome completo*">
+                <p class="error-message">Campo obrigatório</p>
+            </div>
+            <div class="input-container">
+                <input type="email" name="email" class="required" placeholder="Email*">
+                <p class="error-message">Campo obrigatório</p>
+            </div>
+            <div class="input-container">
+                <input type="text" name="telefone" class="required" placeholder="Telefone*">
+                <p class="error-message">Campo obrigatório</p>
+            </div>
+            <div class="input-container">
+                <textarea name="mensagem" placeholder="Mensagem*" class="required" cols="30" rows="10"></textarea>
+                <p class="error-message">Campo obrigatório</p>
+            </div>
+            <p class="required-fields">*Campos obrigatórios</p>
+            <input type="submit" id="submit" value="Enviar">
+        </form>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
